@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import OpenMeteoSdk
 
 
 protocol APIServiceProtocol {

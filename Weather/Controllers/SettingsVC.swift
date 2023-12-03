@@ -16,5 +16,8 @@ final class SettingsVC: UIViewController {
         navigationItem.title = nil
     }
     
+    deinit {
+        print("deinit \(self)")
+    }
 
 }

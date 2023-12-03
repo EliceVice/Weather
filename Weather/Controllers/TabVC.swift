@@ -16,7 +16,10 @@ final class TabVC: UITabBarController {
     }
     
     private func addAndConfigureControllers() {
-        let tab1 = WeatherVC()
+        let tab1 = WeatherVC(
+            locationViewModel: LocationViewModel(),
+            weatherViewModel: WeatherViewModel(apiService: APIService())
+        )
         let tab2 = SettingsVC()
         
         tab1.title = "Weather"

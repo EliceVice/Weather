@@ -7,22 +7,24 @@
 
 import Foundation
 
-
 protocol WeatherViewModelProtocol {
     func getWeatherInformation()
 }
 
 final class WeatherViewModel: WeatherViewModelProtocol {
     
-    private var apiService: APIService
+    private let apiService: APIServiceProtocol
     
-    init() {
-        apiService = APIService()
+    init(apiService: APIServiceProtocol) {
+        self.apiService = apiService
     }
     
     public func getWeatherInformation() {
         let weather = apiService.getWeather()
+        
+        // do something with the weather
         print(weather)
     }
     
 }
+

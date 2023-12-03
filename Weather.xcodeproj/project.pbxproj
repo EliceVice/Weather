@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D22653FA2B16E6C30073D6B3 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22653F92B16E6C30073D6B3 /* LocationViewModel.swift */; };
 		D22FC8162B091C3E003E1CE6 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22FC8152B091C3E003E1CE6 /* SettingsVC.swift */; };
 		D22FC8182B091C6F003E1CE6 /* TabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22FC8172B091C6F003E1CE6 /* TabVC.swift */; };
 		D2709B9F2B123FEA00AF3EB7 /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2709B9E2B123FEA00AF3EB7 /* Icons.swift */; };
@@ -19,9 +20,11 @@
 		D2BB65C02B09177C00FCE9C9 /* WeatherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BB65BF2B09177C00FCE9C9 /* WeatherVC.swift */; };
 		D2BB65C52B09177D00FCE9C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2BB65C42B09177D00FCE9C9 /* Assets.xcassets */; };
 		D2BB65C82B09177D00FCE9C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2BB65C62B09177D00FCE9C9 /* LaunchScreen.storyboard */; };
+		D2EC85802B1C18D700387300 /* OpenMeteoSdk in Frameworks */ = {isa = PBXBuildFile; productRef = D2EC857F2B1C18D700387300 /* OpenMeteoSdk */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D22653F92B16E6C30073D6B3 /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
 		D22FC8152B091C3E003E1CE6 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		D22FC8172B091C6F003E1CE6 /* TabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabVC.swift; sourceTree = "<group>"; };
 		D2709B9E2B123FEA00AF3EB7 /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
@@ -43,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2EC85802B1C18D700387300 /* OpenMeteoSdk in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				D2709BA02B1249BF00AF3EB7 /* WeatherViewModel.swift */,
+				D22653F92B16E6C30073D6B3 /* LocationViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -158,6 +163,7 @@
 			);
 			name = Weather;
 			packageProductDependencies = (
+				D2EC857F2B1C18D700387300 /* OpenMeteoSdk */,
 			);
 			productName = Weather;
 			productReference = D2BB65B82B09177C00FCE9C9 /* Weather.app */;
@@ -188,6 +194,7 @@
 			);
 			mainGroup = D2BB65AF2B09177C00FCE9C9;
 			packageReferences = (
+				D2EC857E2B1C18D700387300 /* XCRemoteSwiftPackageReference "sdk" */,
 			);
 			productRefGroup = D2BB65B92B09177C00FCE9C9 /* Products */;
 			projectDirPath = "";
@@ -220,6 +227,7 @@
 				D2709BA52B1250B000AF3EB7 /* Weather.swift in Sources */,
 				D2709B9F2B123FEA00AF3EB7 /* Icons.swift in Sources */,
 				D22FC8182B091C6F003E1CE6 /* TabVC.swift in Sources */,
+				D22653FA2B16E6C30073D6B3 /* LocationViewModel.swift in Sources */,
 				D2709BA32B124EED00AF3EB7 /* APIService.swift in Sources */,
 				D2BB65BC2B09177C00FCE9C9 /* AppDelegate.swift in Sources */,
 				D2BB65BE2B09177C00FCE9C9 /* SceneDelegate.swift in Sources */,
@@ -371,6 +379,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -399,6 +408,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -434,6 +444,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D2EC857E2B1C18D700387300 /* XCRemoteSwiftPackageReference "sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/open-meteo/sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D2EC857F2B1C18D700387300 /* OpenMeteoSdk */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D2EC857E2B1C18D700387300 /* XCRemoteSwiftPackageReference "sdk" */;
+			productName = OpenMeteoSdk;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D2BB65B02B09177C00FCE9C9 /* Project object */;
 }
